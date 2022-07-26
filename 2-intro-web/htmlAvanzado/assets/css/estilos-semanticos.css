@@ -1,0 +1,43 @@
+*{
+    font font-size: 1.5rem;
+}
+
+header{
+    background-color: aquamarine;
+    height: 200px;
+    width: auto;
+}
+
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    width: auto;
+    height: 600px;
+}
+
+/* Aside agrega una etiqueta a un lado,
+son etiquetas viejas pero CSS permite
+acomodar todo de una manera sencilla
+
+aside{
+    display: flex;
+    background-color: rgb(236, 18, 18);
+    width: 250px;
+    height: 600px;
+} */
+
+footer{
+    background-color:blueviolet;
+    width: auto;
+    height: 600px;
+}
+
+.cuadro {
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+
+}
