@@ -1,7 +1,15 @@
+html{
+    font-size: 16px;
+}
 
+.cuadro-padre{
+    font-size: 10px;
+}
 .cuadro {
-    height: 100px;
-    width: 100px;
+
+/*     1 rem = 16 pixeles */
+    height: 10rem;
+    width: 10rem;
 
 /*     Forma larga: */
    /*  margin-top: 10px;
@@ -23,29 +31,29 @@
 
 .el-1{
     background-color: blue;
-    position: fixed;
+/*     position: fixed; */
     
 }
 .el-2{
     background-color: red;
-    top: 0;
+/*     top: 0;
     right: 0;
     position:sticky;
-    top: 100px; 
+    top: 100px;  */
 
 }
 .el-3{
     background-color: pink;
-    position: relative;
+/*     position: relative;
     left: 100px;
-    bottom: 200px;
+    bottom: 200px; */
 
 }
 .el-4{
     background-color: green;
-    position:static;
+/*     position:static; */
 }
 .el-5{
     background-color: darkorchid;
-    position: static;
+/*     position: static; */
 }
