@@ -1,0 +1,31 @@
+.img-carousel {
+        height: calc(50vh - 76px);
+        object-fit: cover;
+}
+
+.img-carta{
+
+    height: 300px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: blue;
+    }
+
+}
+
+@media (max-width: 1200px){
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+
+}
+
+.caja{
+    position:relative;
+    top: -60px;
+
+}
