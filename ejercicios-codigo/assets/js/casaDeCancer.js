@@ -40,6 +40,7 @@ gradoUsuario = prompt("Ingresa el valor numérico de los grados actuales, ejempl
 conversor = prompt("Ingresa los grados a los que quieres convertir tu dato actual: Celsius, Fahrenheit o Kelvin, recuerda comenzar con mayúscula y escribirlo correctamente");
 
 numeroUsuario = Number(gradoUsuario);
+
 switch(tipoUsuario){
     case "Celsius":
             switch (conversor) {
@@ -49,18 +50,18 @@ switch(tipoUsuario){
                     break;
     
                 case "Fahrenheit":
-                    function formula(gradoUsuario) {
-                        resultado = (numeroUsuario * (9/5))+32; 
-                    }formula(gradoUsuario);
+                    function formula(resultado) {
+                        resultado = ((numeroUsuario * 9)/5)+32; 
+                    }formula(resultado);
 
-                    alert("Tus " + gradoUsuario + " grados Celsius equivalen a " + resultado + " grados Fahrenheit");
+                    alert("Tus " + numeroUsuario + " grados Celsius equivalen a " + resultado + " grados Fahrenheit");
                     break;
                 
                 case "Kelvin":
                         //Celsius a Kelvin: 0 °C + 273.15 = 273.15 K
-                    function formula(gradoUsuario) {
+                    function formula(resultado) {
                         resultado = (numeroUsuario + 273.15); 
-                    }formula(gradoUsuario);
+                    }formula(resultado);
 
                     alert("Tus " + gradoUsuario + " grados Celsius equivalen a " + resultado + " grados Kelvin");
                     break;
