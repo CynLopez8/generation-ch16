@@ -1,0 +1,18 @@
+.btn-gatito{
+    margin: 0 auto; /* Con esta funcion y display se centra el boton */
+    display:block; /* Con esta funcion y margin se centra el boton */
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5 px;
+}
+
+#img-gatito{ /* Selector de estilo */
+    display: block;
+    margin: 20px auto;
+
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
