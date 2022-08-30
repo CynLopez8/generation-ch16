@@ -2,20 +2,20 @@ package com.cell.h_abstracta;
 
 public class Circulo extends FigurasGeometricas {
 
-    public Circulo(){
-
-    }
     private float radio;
 
     @Override
     public float area() {
         return (float) (Math.PI * Math.pow(radio,2));
     }
+
     public Circulo(float radio){
-        this.radio=radio;
+        super("Circulo");
+        this.radio = radio;
+
     }
 
-    public double getRadio() {
+    public float getRadio() {
         return radio;
     }
 
