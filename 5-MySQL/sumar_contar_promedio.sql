@@ -30,7 +30,15 @@ SELECT customer_id, COUNT(*) FROM payment GROUP BY customer_id ORDER BY COUNT(*)
 -- GROUP BY : Agrupa solo si se usa con SUM, AVG y COUNT, si lo usamos solo omite los valores repetidos
 -- ORDER BY : Ordena segun la columna o funcion que le indiquemos ASC desc
 
-SELECT * FROM payment ORDER BY staff_id ASC;
+SELECT * FROM payment ORDER BY amount ASC;
 SELECT * FROM payment GROUP BY staff_id;
 
--- ¿Cual cliente realizo mas rentas? 148 - 46 / 318 - 12
+-- ¿Cual cliente compró mas? 526 - 221.55 / 248 - 50.85
+SELECT customer_id, SUM(amount) FROM payment GROUP BY customer_id ORDER BY SUM(amount) DESC;
+
+-- AVG () Regresa el promedio
+SELECT AVG(amount) AS Promedio FROM payment;
+
+-- ¿Cuál cliente gastó mas en promedio?
+SELECT customer_id, AVG(amount) FROM payment GROUP BY customer_id ORDER BY AVG(amount) DESC;
+
